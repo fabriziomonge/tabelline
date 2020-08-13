@@ -42,6 +42,8 @@ for i in range (100):
             st.write("Risultato esatto, bravo")
         else:
             st.write("Errore, il risultato è:", C)
+        
+        time.sleep(2)
             
         lista1.append(A)
         lista2.append(B)
