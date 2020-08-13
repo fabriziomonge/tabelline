@@ -27,6 +27,9 @@ for i in range (100):
     C = A*B
     testo = ("calcola "+str(A )+" X "+str(B)+ " =")
     D = st.text_input(testo,value="")
+    if D == ""
+        time.sleep(10)
+    
     
     
     try:
