@@ -17,7 +17,7 @@ lista2=[]
 lista3=[]
 lista4=[]
 
-import streamilt as st
+import streamlit as st
 
 
 for i in range (100):
