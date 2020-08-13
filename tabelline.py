@@ -49,7 +49,7 @@ for i in range (100):
         lista4.append(D)
     
     else:
-    i = 100
+        i = 100
 
 risultati = pd.DataFrame(lista1, columns=['moltiplicando'])
 risultati['moltiplicatore'] = lista2
