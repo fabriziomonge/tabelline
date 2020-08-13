@@ -22,28 +22,33 @@ import streamlit as st
 
 
 for i in range (100):
-  if D != "fine":
-    A = (random.randint(2,9))
-    B = (random.randint(2,9))
-    C = A*B
-    testo = ("calcola "+str(A )+" X "+str(B)+ " =")
-    D = st.text_input(testo,value="")
-    if D == "":
-        time.sleep(10)
+    if D != "fine":
+        A = (random.randint(2,9))
+        B = (random.randint(2,9))
+        C = A*B
+        testo = ("calcola "+str(A )+" X "+str(B)+ " =")
+        D = st.text_input(testo,value="")
+        if D == "":
+            time.sleep(10)
     
     
     
-    try:
-      D = int(D)
-    except:
-      D = D
-
-    lista1.append(A)
-    lista2.append(B)
-    lista3.append(C)
-    lista4.append(D)
-
-  else:
+        try:
+            D = int(D)
+        except:
+            D = D
+        
+        if D == C:
+            st.write("Risultato esatto, bravo")
+        else:
+            st.write("Errore, il risultato è:", C)
+            
+        lista1.append(A)
+        lista2.append(B)
+        lista3.append(C)
+        lista4.append(D)
+    
+    else:
     i = 100
 
 risultati = pd.DataFrame(lista1, columns=['moltiplicando'])
