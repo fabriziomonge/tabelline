@@ -9,6 +9,7 @@ Original file is located at
 
 import random
 import pandas as pd
+import time
 
 
 D = 0
